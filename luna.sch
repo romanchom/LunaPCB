@@ -48,10 +48,10 @@ F 3 "" H 900 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L power:GND #PWR07
 U 1 1 5CCE69CC
 P 2200 2500
-F 0 "#PWR03" H 2200 2250 50  0001 C CNN
+F 0 "#PWR07" H 2200 2250 50  0001 C CNN
 F 1 "GND" H 2205 2327 50  0000 C CNN
 F 2 "" H 2200 2500 50  0001 C CNN
 F 3 "" H 2200 2500 50  0001 C CNN
@@ -86,10 +86,10 @@ Wire Wire Line
 Wire Wire Line
 	2350 6200 2350 6300
 $Comp
-L power:+5V #PWR011
+L power:+5V #PWR010
 U 1 1 5CD3E2A9
 P 2600 6200
-F 0 "#PWR011" H 2600 6050 50  0001 C CNN
+F 0 "#PWR010" H 2600 6050 50  0001 C CNN
 F 1 "+5V" H 2615 6373 50  0000 C CNN
 F 2 "" H 2600 6200 50  0001 C CNN
 F 3 "" H 2600 6200 50  0001 C CNN
@@ -97,10 +97,10 @@ F 3 "" H 2600 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR012
+L power:GND #PWR011
 U 1 1 5CD3257C
 P 2600 6750
-F 0 "#PWR012" H 2600 6500 50  0001 C CNN
+F 0 "#PWR011" H 2600 6500 50  0001 C CNN
 F 1 "GND" H 2605 6577 50  0000 C CNN
 F 2 "" H 2600 6750 50  0001 C CNN
 F 3 "" H 2600 6750 50  0001 C CNN
@@ -159,17 +159,6 @@ Wire Wire Line
 	1600 2750 900  2750
 Wire Wire Line
 	900  2750 900  2600
-$Comp
-L Regulator_Linear:LM2936-3.3 U1
-U 1 1 5CD6EF90
-P 4800 2250
-F 0 "U1" H 4800 2492 50  0000 C CNN
-F 1 "LM2936-3.3" H 4800 2401 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4800 2475 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2936.pdf" H 4800 2200 50  0001 C CNN
-	1    4800 2250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR016
 U 1 1 5CD71403
@@ -260,10 +249,10 @@ Wire Wire Line
 Wire Wire Line
 	7050 4950 7050 4900
 $Comp
-L power:GND #PWR07
+L power:GND #PWR06
 U 1 1 5CD8AC3D
 P 1850 4200
-F 0 "#PWR07" H 1850 3950 50  0001 C CNN
+F 0 "#PWR06" H 1850 3950 50  0001 C CNN
 F 1 "GND" H 1855 4027 50  0000 C CNN
 F 2 "" H 1850 4200 50  0001 C CNN
 F 3 "" H 1850 4200 50  0001 C CNN
@@ -271,10 +260,10 @@ F 3 "" H 1850 4200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR06
+L power:+5V #PWR05
 U 1 1 5CD8B65E
 P 1850 3300
-F 0 "#PWR06" H 1850 3150 50  0001 C CNN
+F 0 "#PWR05" H 1850 3150 50  0001 C CNN
 F 1 "+5V" H 1865 3473 50  0000 C CNN
 F 2 "" H 1850 3300 50  0001 C CNN
 F 3 "" H 1850 3300 50  0001 C CNN
@@ -431,10 +420,10 @@ Wire Wire Line
 	900  2850 900  2750
 Connection ~ 900  2750
 $Comp
-L power:GND #PWR010
+L power:GND #PWR012
 U 1 1 5CD6CE4D
 P 2750 2800
-F 0 "#PWR010" H 2750 2550 50  0001 C CNN
+F 0 "#PWR012" H 2750 2550 50  0001 C CNN
 F 1 "GND" H 2755 2627 50  0000 C CNN
 F 2 "" H 2750 2800 50  0001 C CNN
 F 3 "" H 2750 2800 50  0001 C CNN
@@ -511,17 +500,6 @@ F 3 "http://www.diodes.com/assets/Datasheets/ds31787.pdf" H 9650 1600 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
-U 1 1 5CDAAC80
-P 9750 1150
-F 0 "R8" H 9820 1196 50  0000 L CNN
-F 1 "10k" H 9820 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9680 1150 50  0001 C CNN
-F 3 "~" H 9750 1150 50  0001 C CNN
-	1    9750 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Screw_Terminal_01x06 J5
 U 1 1 5CDABD47
 P 10800 5800
@@ -532,7 +510,7 @@ F 3 "~" H 10800 5800 50  0001 C CNN
 	1    10800 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 9050 1600 0    50   Input ~ 0
+Text GLabel 9400 1600 0    50   Input ~ 0
 DUMMY_LOAD
 $Comp
 L power:GNDPWR #PWR022
@@ -555,17 +533,6 @@ F 2 "" H 9750 900 50  0001 C CNN
 F 3 "" H 9750 900 50  0001 C CNN
 	1    9750 900 
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D1
-U 1 1 5CDB4E44
-P 10000 1150
-F 0 "D1" V 9954 1229 50  0000 L CNN
-F 1 "D_Schottky" V 10045 1229 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 10000 1150 50  0001 C CNN
-F 3 "~" H 10000 1150 50  0001 C CNN
-	1    10000 1150
-	0    1    1    0   
 $EndComp
 $Comp
 L power:+12V #PWR027
@@ -595,21 +562,7 @@ Connection ~ 10500 5800
 Wire Wire Line
 	9750 900  9750 950 
 Wire Wire Line
-	9750 950  10000 950 
-Wire Wire Line
-	10000 950  10000 1000
-Wire Wire Line
-	9750 950  9750 1000
-Connection ~ 9750 950 
-Wire Wire Line
 	9750 1400 9750 1350
-Wire Wire Line
-	9750 1350 10000 1350
-Wire Wire Line
-	10000 1350 10000 1300
-Connection ~ 9750 1350
-Wire Wire Line
-	9750 1350 9750 1300
 Wire Wire Line
 	9450 1600 9400 1600
 $Comp
@@ -623,26 +576,10 @@ F 3 "~" H 10850 1400 50  0001 C CNN
 	1    10850 1400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R5
-U 1 1 5CDFD193
-P 9250 1600
-F 0 "R5" V 9457 1600 50  0000 C CNN
-F 1 "100" V 9366 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9180 1600 50  0001 C CNN
-F 3 "~" H 9250 1600 50  0001 C CNN
-	1    9250 1600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9100 1600 9050 1600
 Wire Wire Line
 	10850 1850 10850 1550
 Wire Wire Line
 	10850 1250 10850 950 
-Wire Wire Line
-	10000 1350 10050 1350
-Connection ~ 10000 1350
 Wire Wire Line
 	9750 1800 9750 1850
 Wire Wire Line
@@ -650,9 +587,6 @@ Wire Wire Line
 Connection ~ 9750 1850
 Wire Wire Line
 	9750 1850 9750 1900
-Wire Wire Line
-	10000 950  10850 950 
-Connection ~ 10000 950 
 $Comp
 L Transistor_FET:DMN3404L Q5
 U 1 1 5CE2A6CB
@@ -665,17 +599,17 @@ F 3 "http://www.diodes.com/assets/Datasheets/ds31787.pdf" H 9650 3050 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L Device:R R5
 U 1 1 5CE2A6D1
 P 9750 2600
-F 0 "R9" H 9820 2646 50  0000 L CNN
+F 0 "R5" H 9820 2646 50  0000 L CNN
 F 1 "10k" H 9820 2555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9680 2600 50  0001 C CNN
 F 3 "~" H 9750 2600 50  0001 C CNN
 	1    9750 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 9050 3050 0    50   Input ~ 0
+Text GLabel 9400 3050 0    50   Input ~ 0
 LED_W1
 $Comp
 L power:GNDPWR #PWR024
@@ -700,10 +634,10 @@ F 3 "" H 9750 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D2
+L Device:D_Schottky D1
 U 1 1 5CE2A6E4
 P 10000 2600
-F 0 "D2" V 9954 2679 50  0000 L CNN
+F 0 "D1" V 9954 2679 50  0000 L CNN
 F 1 "D_Schottky" V 10045 2679 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 10000 2600 50  0001 C CNN
 F 3 "~" H 10000 2600 50  0001 C CNN
@@ -741,19 +675,6 @@ F 3 "~" H 10850 2850 50  0001 C CNN
 	1    10850 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R6
-U 1 1 5CE2A6FB
-P 9250 3050
-F 0 "R6" V 9457 3050 50  0000 C CNN
-F 1 "100" V 9366 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9180 3050 50  0001 C CNN
-F 3 "~" H 9250 3050 50  0001 C CNN
-	1    9250 3050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9100 3050 9050 3050
 Wire Wire Line
 	10850 3300 10850 3000
 Wire Wire Line
@@ -787,10 +708,10 @@ F 3 "http://www.diodes.com/assets/Datasheets/ds31787.pdf" H 9650 4550 50  0001 L
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L Device:R R6
 U 1 1 5CE36942
 P 9750 4100
-F 0 "R10" H 9820 4146 50  0000 L CNN
+F 0 "R6" H 9820 4146 50  0000 L CNN
 F 1 "10k" H 9820 4055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9680 4100 50  0001 C CNN
 F 3 "~" H 9750 4100 50  0001 C CNN
@@ -820,10 +741,10 @@ F 3 "" H 9750 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D3
+L Device:D_Schottky D2
 U 1 1 5CE36955
 P 10000 4100
-F 0 "D3" V 9954 4179 50  0000 L CNN
+F 0 "D2" V 9954 4179 50  0000 L CNN
 F 1 "D_Schottky" V 10045 4179 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 10000 4100 50  0001 C CNN
 F 3 "~" H 10000 4100 50  0001 C CNN
@@ -861,19 +782,6 @@ F 3 "~" H 10850 4350 50  0001 C CNN
 	1    10850 4350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R7
-U 1 1 5CE3696C
-P 9250 4550
-F 0 "R7" V 9457 4550 50  0000 C CNN
-F 1 "100" V 9366 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9180 4550 50  0001 C CNN
-F 3 "~" H 9250 4550 50  0001 C CNN
-	1    9250 4550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9100 4550 9050 4550
 Wire Wire Line
 	10850 4800 10850 4500
 Wire Wire Line
@@ -893,7 +801,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 3900 10850 3900
 Connection ~ 10000 3900
-Text GLabel 9050 4550 0    50   Input ~ 0
+Text GLabel 9400 4550 0    50   Input ~ 0
 LED_W2
 Text GLabel 10300 5700 0    50   Input ~ 0
 DUMMY_LOAD_OUT
@@ -932,10 +840,10 @@ Wire Wire Line
 Wire Wire Line
 	1450 6300 1450 6400
 $Comp
-L power:GND #PWR05
+L power:GND #PWR04
 U 1 1 5CE6634B
 P 1450 6750
-F 0 "#PWR05" H 1450 6500 50  0001 C CNN
+F 0 "#PWR04" H 1450 6500 50  0001 C CNN
 F 1 "GND" H 1455 6577 50  0000 C CNN
 F 2 "" H 1450 6750 50  0001 C CNN
 F 3 "" H 1450 6750 50  0001 C CNN
@@ -1031,10 +939,10 @@ NoConn ~ 1600 2950
 NoConn ~ 2100 2950
 NoConn ~ 2100 2850
 $Comp
-L power:+5V #PWR0101
+L power:+5V #PWR03
 U 1 1 5CFE181B
 P 1450 6300
-F 0 "#PWR0101" H 1450 6150 50  0001 C CNN
+F 0 "#PWR03" H 1450 6150 50  0001 C CNN
 F 1 "+5V" H 1465 6473 50  0000 C CNN
 F 2 "" H 1450 6300 50  0001 C CNN
 F 3 "" H 1450 6300 50  0001 C CNN
@@ -1053,4 +961,67 @@ Wire Wire Line
 Wire Wire Line
 	2350 2250 2350 2350
 Connection ~ 2350 2350
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5CDD5A73
+P 5850 6800
+F 0 "H1" V 5804 6950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5895 6950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5850 6800 50  0001 C CNN
+F 3 "~" H 5850 6800 50  0001 C CNN
+	1    5850 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5CDD8186
+P 5850 7000
+F 0 "H2" V 5804 7150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5895 7150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5850 7000 50  0001 C CNN
+F 3 "~" H 5850 7000 50  0001 C CNN
+	1    5850 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5CDD83FB
+P 5850 7200
+F 0 "H3" V 5804 7350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5895 7350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5850 7200 50  0001 C CNN
+F 3 "~" H 5850 7200 50  0001 C CNN
+	1    5850 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5CDD86EA
+P 5850 7400
+F 0 "H4" V 5804 7550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5895 7550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5850 7400 50  0001 C CNN
+F 3 "~" H 5850 7400 50  0001 C CNN
+	1    5850 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U1
+U 1 1 5CDF6D57
+P 4800 2250
+F 0 "U1" H 4800 2492 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 4800 2401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4800 2450 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 4900 2000 50  0001 C CNN
+	1    4800 2250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5750 6800
+NoConn ~ 5750 7000
+NoConn ~ 5750 7200
+NoConn ~ 5750 7400
+Wire Wire Line
+	9750 1350 10050 1350
+Wire Wire Line
+	9750 950  10850 950 
 $EndSCHEMATC
