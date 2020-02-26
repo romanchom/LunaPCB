@@ -409,7 +409,6 @@ F 3 "~" H 950 1450 50  0001 C CNN
 	1    950  1450
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 950  1950
 Wire Wire Line
 	4400 1350 4900 1350
 Wire Wire Line
@@ -715,5 +714,16 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4738 1300 50  
 F 3 "~" H 4700 1450 50  0001 C CNN
 	1    4700 1450
 	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E55F075
+P 950 1950
+F 0 "#PWR?" H 950 1700 50  0001 C CNN
+F 1 "GND" H 955 1777 50  0000 C CNN
+F 2 "" H 950 1950 50  0001 C CNN
+F 3 "" H 950 1950 50  0001 C CNN
+	1    950  1950
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
